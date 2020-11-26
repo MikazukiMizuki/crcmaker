@@ -1,0 +1,99 @@
+[
+  {
+    "name": "Shopping Cart",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Display Totals"
+    ],
+    "collaborators": [
+      "Customer",
+      "Item"
+    ]
+  },
+  {
+    "name": "Customer",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      "Shopping Cart",
+      "Order"
+    ]
+  },
+  {
+    "name": "Payment",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Show Payment Details",
+      "Verify Payment"
+    ],
+    "collaborators": [
+      "Order"
+    ]
+  },
+  {
+    "name": "Order",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 3,
+    "responsibilities": [
+      "Process buyer",
+      "Get Item",
+      "Get Email Address",
+      "Get Address",
+      "Make a Payment Proof"
+    ],
+    "collaborators": [
+      "Customer",
+      "Item",
+      "Email",
+      "Address",
+      "Payment"
+    ]
+  },
+  {
+    "name": "Item",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Show Item Details"
+    ],
+    "collaborators": [
+      "Shopping Cart",
+      "Order"
+    ]
+  },
+  {
+    "name": "Email",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Show Email address"
+    ],
+    "collaborators": [
+      "Order"
+    ]
+  },
+  {
+    "name": "Address",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Show buyer Address"
+    ],
+    "collaborators": [
+      "Order",
+      "Customer"
+    ]
+  }
+]
